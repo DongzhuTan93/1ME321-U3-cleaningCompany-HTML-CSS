@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U3 Contact us</title>
+    <link rel="stylesheet" href="css/home-page.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="../img/logo.jpg" alt="logo">
+        <p>Vi ger den bästa servicen!</p>
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="clean-service.html">Städtjänster</a></li>
+            <li><a href="about-us.html">Om oss</a></li>
+            <li><a href="contact-us.html">Kontakta oss</a></li>
+            <li><a href="report.pdf">Rapport</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <main>
+            <div id="box1">
+                <p>Vill du bli ny kund och boka en städtjänst? Fyll i formuläret nedan så kontaktar vi dig! Om du kanske bara är lite nyfiken och vill ställa en fråga så är du mycket välkommen att kontakta oss via telefon eller mejl nedan!</p>
+                <h1>Boka en städtjänst!</h1>
+                <div class="type">
+                    <fieldset>
+                        <legend>Typ av städning</legend>
+                        <label>
+                            <input type="radio" name="cleanType" value="homeClean" checked>Hemstäd
+                        </label>
+                        <label>
+                            <input type="radio" name="cleanType" value="companyClean" checked>Företagstäd
+                        </label>
+                        <label>
+                            <input type="radio" name="cleanType" value="bigClean" checked>Storstäd
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datum</legend>
+                        <label>
+                            * Ankomstdag <input type="date" name="availableTime" required>
+                        </label>
+                    </fieldset>
+                    <fieldset id="customer">
+                        <legend>Ny kund</legend>
+                        <div id="customer-wrapper-left">
+                            <label for="name">Name</label>
+                            <label for="telefon">Telefon</label>
+                            <label for="adress">Adress</label>
+                            <label for="email">E-post</label>
+                        </div>
+                        <div id="customer-wrapper-right">
+                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="telefon" name="telefon" required>
+                            <input type="text" id="adress" name="adress" required>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+                    <fieldset id="text">
+                        <legend>Meddelande</legend>
+                        <textarea></textarea>
+                    </fieldset>
+    
+                    <input type="submit" value="Skicka" id="send">
+                    <br>
+                    <br>
+                    <hr>
+                    <h2>Ring oss : 076-089078093 (Öppettider: 08:00-16:00), eller skicka epost till: stad@dongstad.com</h2>
+                </div>
+            </div>
+            <div id="box2">
+                <a href="clean-service.html" target="_blank"><img src="../img/contact-us.jpg" alt="contact us"></a>
+            </div>
+        </main>
+        <footer>
+            <p>Adelgatan 16, 39350 Kalmar, Sverige</p>
+            <p>+46 76 089 78 93, stad@dongstad.com. Öppettider: 08:00-16:00. <a href="contact-us.html">Kontakta oss</a></p>
+        </footer>
+    </div>
+</body>
+</html>
