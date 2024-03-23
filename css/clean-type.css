@@ -8,9 +8,9 @@
 
 .contain div {
     border: 3px solid gold;
-    padding: 10px;
-    margin: 20px;
-    flex-basis: 300px; /* Adjust this value if you need the divs to be narrower or wider */
+    padding: 20px;
+    margin: 10px;
+    flex-basis: 350px; /* Adjust this value if you need the divs to be narrower or wider */
     flex-shrink: 1;
     flex-grow: 0;
     text-align: center;
@@ -18,12 +18,12 @@
 }
 
 .contain div:hover {
-    background-color:ivory;
+    background-color:beige;
 }
 
 .contain img {
     max-width: 300px; /* Reduced from 1000px to make images smaller */
-    border-radius: 15px; /* This ensures that the images also have rounded corners */
+    border-radius: 20px; /* This ensures that the images also have rounded corners */
 }
 
 h2 {
