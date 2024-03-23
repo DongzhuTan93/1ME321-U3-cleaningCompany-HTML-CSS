@@ -12,11 +12,12 @@ body {
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
 }
 
+
 h1 {
-    background-color: blanchedalmond;
+    background-color:azure;
     color: black;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -24,7 +25,15 @@ h1 {
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: dimgray;
+    color:black;
+}
+
+.top {
+    margin-top: 4rem;
+    margin-bottom: 10px;
+    padding: 20px;
+    color: beige;
+    font-size: 90px;
 }
 
 .contain {
@@ -35,33 +44,32 @@ h2 {
 
 nav ul {
     list-style: none;
-    float: right;
+    float:right;
     text-align: center;
     display: inline-flex;
 }
 
 nav ul li {
-    border: 5px solid white;
     padding: 10px;
-    margin: 0px 10px;
+    margin: 5px 10px;
 }
 
 nav ul li a {
-    color: white;
+    color:black;
     font-family: serif;
-    font-size: x-large;
+    font-size: 40px;
 }
 
 nav ul li:hover {
-    background-color: lightblue;
+    background-color:antiquewhite;
     overflow: hidden;
 }
 
 nav {
     background-color: aliceblue;
     background-image: url(../img/nav-picture.jpg);
-    padding: 30px;
-    height: 400px;
+    padding: 20px;
+    height: 500px;
     background-size: inherit;
     flex: none;
 }
@@ -74,7 +82,7 @@ main, .map, footer {
 }
 
 main {
-    flex: 1;
+    flex: 2;
     display: flex;
     justify-content: space-evenly;
 }
@@ -99,16 +107,24 @@ footer {
 
 #box1 {
     width: 600px;
-    border: 4px solid lightskyblue;
-    padding: 30px;
+    border: 4px solid gold;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.layout {
+    background-color:beige;
+    font-size: 30px;
+    color:black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #box2 {
-    width: 500px;
+    width: 800px;
 }
 
 #box1 fieldset {
-    border: 2px solid red;
+    border: 2px solid gold;
     padding: 10px;
     margin: 10px;
 }
@@ -116,7 +132,7 @@ footer {
 #box2 img {
     transition-property: opacity;
     transition-duration: 2s;
-    max-width: 350px;
+    max-width: 800px;
     transition: all 1s;
     z-index: 1;
     position: relative;
@@ -136,7 +152,7 @@ footer {
 #send {
     padding-bottom: 10px;
     font-size: larger;
-    background-color: aqua;
+    background-color:beige;
     float: inline-end;
 }
 
@@ -155,7 +171,7 @@ footer {
     flex-direction: column;
     line-height: 30px;
     gap: 8px;
-    margin-left: 8px;
+    margin-left: 2px;
 }
 
 #text textarea {
