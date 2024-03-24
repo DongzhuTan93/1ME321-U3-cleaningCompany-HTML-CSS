@@ -105,10 +105,11 @@ footer {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    width: 100%; /* Full width */
+    align-items: center; /* Center-align child elements */
+    max-width: 100%; /* Prevent the wrapper from extending beyond the viewport width */
 }
 
 #box1 {
@@ -126,7 +127,7 @@ footer {
 }
 
 #box2 {
-    width: 800px;
+    width: 600px;
 }
 
 #box1 fieldset {
@@ -186,29 +187,59 @@ footer {
 }
 
 @media screen and (max-width: 800px){
-    nav ul {
-        display: contents;
+    nav {
+        display: flex; /* This will align the logo and nav items in a row */
+        justify-content: space-between; /* This will put space between logo and nav items */
+        align-items: center; /* This will center them vertically */
+        flex-wrap: wrap; /* This allows nav items to wrap to the next line if there is not enough space */
     }
 
-    .logo {
-        width: 10%;
+     nav ul {
+        flex: 1 1 auto; /* This allows the nav items to take up the remaining space */
+        justify-content: flex-end; /* This aligns the nav items to the right */
+        padding: 0;
+        margin: 0;
+        display: flex; /* Display as flex to keep in line */
+        flex-direction: row; /* Align nav items in a row */
+        flex-wrap: wrap; /* Allow the list items to wrap onto the next line */
     }
 
-    .wrapper {
-        flex-direction: column;
+    nav ul li {
+        padding: 10px; /* Provide spacing between nav items */
     }
 
-    /* Adjust the width of the boxes to be responsive */
-    #box1, #box2 {
-        width: 100%; /* Make it full width */
-        margin: 0; /* Remove margin to align with the edge of the screen */
-        padding: 10px; /* Adjust padding as needed */
-        box-sizing: border-box; /* Include padding in width */
+   #box2 {
+        width: 100%; /* Make box2 full width */
+        max-width: 800px; /* Max width to prevent it from growing too large */
+        margin: 0 auto; /* Center box2 */
     }
 
-      /* Adjust the iframe within the map */
-      .map iframe {
-        width: 100%; /* Make it full width */
-        height: auto; /* Adjust height as needed or set a specific height */
+    #box2 img {
+        max-width: 100%; /* Ensure the image is responsive */
+        height: auto; /* Maintain aspect ratio */
     }
+
+    .logo{
+        width: 20%;
+    }
+
+    .top {
+        font-size:small;
+    }
+
+    .wrapper, #box2, .map, footer {
+        padding: 0; /* Remove padding on smaller screens if necessary */
+    }
+    /* Adjustments for all text sizes */
+    h1, h2, h3, nav ul li a {
+        font-size: smaller; /* Adjust font sizes appropriately */
+    }
+
+    /* Make sure all your inputs and text areas are also responsive */
+    input[type="text"], textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ... additional styles ... */
 }
