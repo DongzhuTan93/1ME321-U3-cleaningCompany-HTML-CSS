@@ -15,29 +15,29 @@ body {
     width: 150px;
 }
 
-
 h1 {
-    background-color:azure;
+    background-color: azure;
     color: black;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
 }
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color:black;
+    color: black;
 }
 
 h3 {
-    color:dimgray;
+    color: dimgray;
 }
 
 .top {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 50px;
     padding: 20px;
     color: beige;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 .contain {
@@ -48,7 +48,7 @@ h3 {
 
 nav ul {
     list-style: none;
-    float:right;
+    float: right;
     text-align: center;
     display: inline-flex;
 }
@@ -60,13 +60,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color:black;
+    color: black;
     font-family: serif;
     font-size: 40px;
 }
 
 nav ul li:hover {
-    background-color:beige;
+    background-color: beige;
     overflow: hidden;
 }
 
@@ -77,31 +77,44 @@ nav {
     height: 500px;
     background-size: inherit;
     flex: none;
-    opacity: 0.9;
-}
-
-main, .map, footer {
-    margin-top: 15px;
-    margin-left: 8px;
-    margin-right: 8px;
-    padding: 20px;
+    opacity: 0.8;
 }
 
 main {
+    padding: 30px;
     flex: 2;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+#box1, #box2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .map {
-    background-color:beige;
+    margin-top: 30px;
     text-align: center;
+    width: 95%; /* Full width */
+    padding: 0; /* No padding */
+}
+
+.map iframe {
+    width: 100%; /* Full width */
+    height: 550px; /* Height of the iframe */
+    border: 0;
 }
 
 footer {
-    margin-bottom: 8px;
-    border: 2px solid black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size:x-large;
     text-align: center;
+    background-color:rgb(245,245,245);
+    width: 100%;
 }
 
 .wrapper {
@@ -113,22 +126,24 @@ footer {
 }
 
 #box1 {
-    width: 600px;
     border: 4px solid gold;
-    padding: 20px;
+    padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 3rem;
 }
 
+
 .layout {
-    background-color:beige;
+    background-color: beige;
     font-size: 30px;
-    color:black;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #box2 {
-    width: 600px;
+    margin-left: 20px;
 }
+
 
 #box1 fieldset {
     border: 2px solid gold;
@@ -137,12 +152,11 @@ footer {
 }
 
 #box2 img {
-    transition-property: opacity;
-    transition-duration: 2s;
-    max-width: 800px;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
     transition: all 1s;
-    z-index: 1;
-    position: relative;
+    max-width: none;
 }
 
 #box2 img:hover {
@@ -159,7 +173,7 @@ footer {
 #send {
     padding-bottom: 10px;
     font-size: larger;
-    background-color:beige;
+    background-color: beige;
     float: inline-end;
 }
 
@@ -183,10 +197,10 @@ footer {
 
 #text textarea {
     height: 5em;
-    width: 100%;
+    width: 90%;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
     nav {
         display: flex; /* This will align the logo and nav items in a row */
         justify-content: space-between; /* This will put space between logo and nav items */
@@ -194,7 +208,7 @@ footer {
         flex-wrap: wrap; /* This allows nav items to wrap to the next line if there is not enough space */
     }
 
-     nav ul {
+    nav ul {
         flex: 1 1 auto; /* This allows the nav items to take up the remaining space */
         justify-content: flex-end; /* This aligns the nav items to the right */
         padding: 0;
@@ -208,7 +222,7 @@ footer {
         padding: 10px; /* Provide spacing between nav items */
     }
 
-   #box2 {
+    #box2 {
         width: 100%; /* Make box2 full width */
         max-width: 800px; /* Max width to prevent it from growing too large */
         margin: 0 auto; /* Center box2 */
@@ -219,27 +233,50 @@ footer {
         height: auto; /* Maintain aspect ratio */
     }
 
-    .logo{
+    .logo {
         width: 20%;
     }
 
     .top {
-        font-size:small;
+        font-size: small;
     }
 
-    .wrapper, #box2, .map, footer {
+    .wrapper,
+    #box2,
+    .map,
+    footer {
         padding: 0; /* Remove padding on smaller screens if necessary */
     }
+
     /* Adjustments for all text sizes */
-    h1, h2, h3, nav ul li a {
+    h1,
+    h2,
+    h3,
+    nav ul li a {
         font-size: smaller; /* Adjust font sizes appropriately */
     }
 
     /* Make sure all your inputs and text areas are also responsive */
-    input[type="text"], textarea {
+    input[type="text"],
+    textarea {
         width: 100%;
         box-sizing: border-box;
     }
 
-    /* ... additional styles ... */
+    main {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #box1, #box2 {
+        width: 100%;
+        max-width: none;
+        margin: 10px 0;
+    }
+
+    #box2 img {
+        max-height: 300px; /* Reduce max height on smaller screens */
+    }
+
+
 }
