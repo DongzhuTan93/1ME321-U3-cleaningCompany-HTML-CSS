@@ -1,8 +1,12 @@
-### Home page:
+### 1. Home page:
 ![alt text](img/home-page-readme.png)
 
-### Different types of cleaning services:
+***
+
+### 2. Different types of cleaning services:
 ![alt text](img/types-of-cleaning-readme.png)
 
-### Insert Google Map of company location:
+***
+
+### 3. Insert Google Map of company location:
 ![alt text](img/google-maps-readme.png)
