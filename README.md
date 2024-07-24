@@ -4,17 +4,17 @@
 ***
 
 ### 1. Home page:
-![alt text](img/home-page-readme.png)
+![Home page](img/home-page-readme.png)
 
 ***
 
 ### 2. Different types of cleaning services:
-![alt text](img/types-of-cleaning-readme.png)
+![Types Of Cleaning](img/types-of-cleaning-readme.png)
 
 ***
 
 ### 3. Insert Google Map of company location:
-![alt text](img/google-maps-readme.png)
+![Google Maps](img/google-maps-readme.png)
 
 ***
 
